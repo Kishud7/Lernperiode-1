@@ -12,3 +12,12 @@ eingebaut. Außerdem habe ich gelernt, wie man bei einer falschen Eingabe eine F
 ## Auf nächstes mal
 - [ ] Beim nächsten Mal möchte ich eine While-Schleife hinzufügen.
 - [ ] Falls ich noch Zeit habe, möchte ich meinen Taschenrechner so erweitern, dass er auch algebraische Aufgaben lösen kann.
+
+## Heute 04092026
+- [x] Auf YouTube und mit Hilfe von ChatGPT habe ich gelernt, wie man Algebra in Code darstellt und wie man verschiedene Rechnungen in einem Programm umsetzen kann.
+
+## Auf nächstes mal
+- [ ] Meinen Code weiterprogrammieren
+- [ ] Algebra hinzufügen
+- [ ] Eine Startseite („Homepage“) programmieren, auf der man die verschiedenen Funktionen auswählen kann.
+- [ ] Falls ich Zeit habe mit Brüche arbeiten
