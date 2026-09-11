@@ -1,49 +1,163 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+Taschenrechner();
 
-
-Console.WriteLine("Bitte geben Sie an, was für eine Rechnung Sie machen wollen. Für Addition +, für Subtraktion -, für Multiplikation x und für Division :");
-
-string Userinput = Console.ReadLine();
-
-if (Userinput == "+")
+static void Taschenrechner()
 {
-    Console.WriteLine("Bitte geben Sie Ihre erste Zahl ein:");
-    double input11 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Bitte geben Sie Ihre zweite Zahl ein:");
-    double input12 = Convert.ToDouble(Console.ReadLine());
-    double result1 = input11 + input12;
-    Console.WriteLine("Ihre Ergebniss ist " + result1);
+    Console.Clear();
+
+    Console.WriteLine("==================================");
+    Console.WriteLine("         TASCHENRECHNER");
+    Console.WriteLine("==================================");
+    Console.WriteLine();
+    Console.WriteLine("Wähle eine Rechenart:");
+    Console.WriteLine("+  = Addition");
+    Console.WriteLine("-  = Subtraktion");
+    Console.WriteLine("*  = Multiplikation");
+    Console.WriteLine("/  = Division");
+    Console.WriteLine("a  = Algebra");
+    Console.WriteLine();
+    Console.Write("Deine Auswahl: ");
+
+    string Rechenart = Console.ReadLine();
+
+    if (Rechenart == "+")
+    {
+        Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
+        double zahl1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
+        double zahl2 = Convert.ToDouble(Console.ReadLine());
+
+        double result = zahl1 + zahl2;
+
+        Console.WriteLine("Ihr Ergebnis ist: " + result);
+
+        Neustart();
+    }
+
+    else if (Rechenart == "-")
+    {
+        Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
+        double zahl1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
+        double zahl2 = Convert.ToDouble(Console.ReadLine());
+
+        double result = zahl1 - zahl2;
+
+        Console.WriteLine("Ihr Ergebnis ist: " + result);
+
+        Neustart();
+    }
+
+    else if (Rechenart == "*")
+    {
+        Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
+        double zahl1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
+        double zahl2 = Convert.ToDouble(Console.ReadLine());
+
+        double result = zahl1 * zahl2;
+
+        Console.WriteLine("Ihr Ergebnis ist: " + result);
+
+        Neustart();
+    }
+
+    else if (Rechenart == "/")
+    {
+        Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
+        double zahl1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
+        double zahl2 = Convert.ToDouble(Console.ReadLine());
+
+        if (zahl2 != 0)
+        {
+            double result = zahl1 / zahl2;
+
+            Console.WriteLine("Ihr Ergebnis ist: " + result);
+        }
+        else
+        {
+            Console.WriteLine("Man kann nicht durch 0 teilen.");
+        }
+
+        Neustart();
+    }
+
+    else if (Rechenart == "a")
+    {
+        Algebra();
+    }
+
+    else
+    {
+        Console.WriteLine("Ungültige Eingabe!");
+        Console.WriteLine("Drücke Enter, um es erneut zu versuchen.");
+
+        Console.ReadLine();
+
+        Taschenrechner();
+    }
 }
 
-else if (Userinput == "-")
+
+static void Algebra()
 {
-    Console.WriteLine("Bitte geben Sie Ihre erste Zahl ein:");
-    double input21 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Bitte geben Sie Ihre zweite Zahl ein:");
-    double input22 = Convert.ToDouble(Console.ReadLine());
-    double result2 = input21 - input22;
-    Console.WriteLine("Ihre Ergebniss ist " + result2);
+    Console.Clear();
+
+    Console.WriteLine("==================================");
+    Console.WriteLine("             ALGEBRA");
+    Console.WriteLine("==================================");
+    Console.WriteLine();
+    Console.WriteLine("Dieses Programm löst Gleichungen");
+    Console.WriteLine("in der Form:");
+    Console.WriteLine();
+    Console.WriteLine("ax + b = c");
+    Console.WriteLine();
+    Console.WriteLine("Beispiel: 2x + 5 = 15");
+    Console.WriteLine();
+
+    Console.Write("Gib die Zahl vor x ein (a): ");
+    double a = Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Gib die Zahl nach x ein (b): ");
+    double b = Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Gib die Zahl auf der rechten Seite ein (c): ");
+    double c = Convert.ToDouble(Console.ReadLine());
+
+    if (a != 0)
+    {
+        double x = (c - b) / a;
+
+        Console.WriteLine();
+        Console.WriteLine("Die Gleichung lautet:");
+        Console.WriteLine(a + "x + " + b + " = " + c);
+
+        Console.WriteLine();
+        Console.WriteLine("Lösung:");
+        Console.WriteLine("x = " + x);
+    }
+    else
+    {
+        Console.WriteLine();
+        Console.WriteLine("Die Zahl vor x darf nicht 0 sein.");
+    }
+
+    Neustart();
 }
 
-else if (Userinput == "x")
-{
-    Console.WriteLine("Bitte geben Sie Ihre erste Zahl ein:");
-    double input31 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Bitte geben Sie Ihre zweite Zahl ein:");
-    double input32 = Convert.ToDouble(Console.ReadLine());
-    double result3 = input31 * input32;
-    Console.WriteLine("Ihre Ergebniss ist " + result3);
-}
 
-else if (Userinput == ":")
+static void Neustart()
 {
-    Console.WriteLine("Bitte geben Sie Ihre erste Zahl ein:");
-    double input41 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Bitte geben Sie Ihre zweite Zahl ein:");
-    double input42 = Convert.ToDouble(Console.ReadLine());
-    double result4 = input41 / input42;
-    Console.WriteLine("Ihre Ergebniss ist " + result4);
-}
+    Console.WriteLine();
+    Console.WriteLine("Drücke Enter, um eine neue Rechnung zu starten.");
 
-else Console.WriteLine("Ungültige Eingabe!");
+    Console.ReadLine();
+
+    Taschenrechner();
+}
