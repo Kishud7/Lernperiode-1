@@ -21,3 +21,12 @@ eingebaut. Außerdem habe ich gelernt, wie man bei einer falschen Eingabe eine F
 - [ ] Algebra hinzufügen
 - [ ] Eine Startseite („Homepage“) programmieren, auf der man die verschiedenen Funktionen auswählen kann.
 - [ ] Falls ich Zeit habe mit Brüche arbeiten
+
+## Heute 11092026
+- [x] Startseite hingefügt
+- [x] Sehr einfache Version von Algebra gefügt.
+
+## Auf nächstes mal
+- [ ] Mehr zu Algebra hinfügen
+- [ ] Bruchrechnungen hinfügen
+- [ ] Potenzen ausrechnen z.B. 10 hoch 7
