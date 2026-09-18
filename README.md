@@ -39,3 +39,6 @@ eingebaut. Außerdem habe ich gelernt, wie man bei einer falschen Eingabe eine F
 ## ILA Hausaufgaben
 - [x] Ich habe mir auf YouTube eine Anleitung zu Matherechnungen auf C Sharp angeschaut.
 Link dazu: https://www.youtube.com/watch?v=_P-2Uees2JI
+
+## Meine Fortschritten und Herausforderungen beim Programmieren
+Während dem Programmieren habe ich viele neue Sachen gelernt und auch einige Fortschritte gemacht. Am Anfang konnte mein Taschenrechner nur normale Rechnungen wie Plus, Minus, Mal und Geteilt lösen. Danach habe ich versucht, meinen Code zu verbessern und neue Funktionen hinzuzufügen. Zum Beispiel habe ich Algebra eingebaut, damit mein Taschenrechner auch einfache Gleichungen lösen kann. Ausserdem habe ich eine Startseite gemacht, auf der man auswählen kann, was man rechnen möchte. Natürlich hatte ich beim Programmieren auch einige Fehler, aber ich konnte viele davon lösen. Dabei haben mir YouTube und ChatGPT geholfen. Ich verstehe C Sharp jetzt viel besser als am Anfang.
