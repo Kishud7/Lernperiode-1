@@ -24,12 +24,12 @@ static void Taschenrechner()
     if (Rechenart == "+")
     {
         Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
-        double zahl1 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl1 = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
-        double zahl2 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl2 = Convert.ToDouble(Console.ReadLine());
 
-        double result = zahl1 + zahl2;
+        double result = InputZahl1 + InputZahl2;
 
         Console.WriteLine("Ihr Ergebnis ist: " + result);
 
@@ -39,12 +39,12 @@ static void Taschenrechner()
     else if (Rechenart == "-")
     {
         Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
-        double zahl1 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl1 = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
-        double zahl2 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl2 = Convert.ToDouble(Console.ReadLine());
 
-        double result = zahl1 - zahl2;
+        double result = InputZahl1 - InputZahl2;
 
         Console.WriteLine("Ihr Ergebnis ist: " + result);
 
@@ -54,12 +54,12 @@ static void Taschenrechner()
     else if (Rechenart == "*")
     {
         Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
-        double zahl1 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl1 = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
-        double zahl2 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl2 = Convert.ToDouble(Console.ReadLine());
 
-        double result = zahl1 * zahl2;
+        double result = InputZahl1 * InputZahl2;
 
         Console.WriteLine("Ihr Ergebnis ist: " + result);
 
@@ -69,14 +69,14 @@ static void Taschenrechner()
     else if (Rechenart == "/")
     {
         Console.Write("Bitte geben Sie Ihre erste Zahl ein: ");
-        double zahl1 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl1 = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Bitte geben Sie Ihre zweite Zahl ein: ");
-        double zahl2 = Convert.ToDouble(Console.ReadLine());
+        double InputZahl2 = Convert.ToDouble(Console.ReadLine());
 
-        if (zahl2 != 0)
+        if (InputZahl2 != 0)
         {
-            double result = zahl1 / zahl2;
+            double result = InputZahl1 / InputZahl2;
 
             Console.WriteLine("Ihr Ergebnis ist: " + result);
         }
