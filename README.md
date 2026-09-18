@@ -30,3 +30,7 @@ eingebaut. Außerdem habe ich gelernt, wie man bei einer falschen Eingabe eine F
 - [ ] Mehr zu Algebra hinfügen
 - [ ] Bruchrechnungen hinfügen
 - [ ] Potenzen ausrechnen z.B. 10 hoch 7
+
+## ILA Hausaufgaben
+- [x] Ich habe mir auf YouTube eine Anleitung zu Matherechnungen auf C Sharp angeschaut.
+Link dazu: https://www.youtube.com/watch?v=_P-2Uees2JI
