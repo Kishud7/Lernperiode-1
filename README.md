@@ -3,6 +3,11 @@
 ## Idee
 Einfacher Taschenrechner --> Zahlen, Algebra usw... mit Website falls ich Zeit habe
 
+## Fertige Code
+Mein Code ist ein Taschenrechner, der Addition, Subtraktion, Multiplikation und Division durchführen kann. Zusätzlich kann er einfache algebraische Gleichungen lösen. Über eine Startseite kann man auswählen, welche Rechenart man verwenden möchte.
+
+<img width="400" height="225" alt="Video Project 27" src="https://github.com/user-attachments/assets/583c7c81-8f8b-482b-8a39-f6a87607f0fa" />
+
 
 ## Heute 28082026
 - [x] Heute habe ich einen Taschenrechner programmiert. Dabei habe ich gelernt, wie man Benutzereingaben speichert und in
